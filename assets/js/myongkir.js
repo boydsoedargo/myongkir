@@ -37,7 +37,7 @@ jQuery(document).ready(function( $ ) {
 	}
 	
 
-	$('#billing_state').live('change', function() {
+	$('#billing_state').on('change', function() {
 		var b_state_id = $(this).find('option:selected').val();									
 
 		$('s2id_billing_state').empty();												
@@ -49,7 +49,7 @@ jQuery(document).ready(function( $ ) {
 		}
 	});
 
-	$('#shipping_state').live('change', function() {
+	$('#shipping_state').on('change', function() {
 		var s_state_id = $(this).find('option:selected').val();									
 
 		$('s2id_shipping_city').empty();												
